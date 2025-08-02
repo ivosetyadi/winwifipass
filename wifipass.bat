@@ -1,9 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo ==============================
-echo       WiFi Password List
-echo ==============================
+echo ========================================
+echo       WiFi Password List - Windows
+echo ========================================
 
 for /f "tokens=2 delims=:" %%i in ('netsh wlan show profiles ^| findstr /C:"All User Profile"') do (
     set "ssid=%%i"
